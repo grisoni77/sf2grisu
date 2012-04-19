@@ -1,0 +1,22 @@
+{# src/Blogger/BlogBundle/Resources/views/Comment/create.html.twig #}
+{# {% extends 'BloggerBlogBundle::layout.html.twig' %}#}
+
+{% block title %}Commenta blog{% endblock%}
+
+{% block body %}
+    <header>
+        <h1>Inserisci un commento</h1>
+    </header>
+
+    {% if app.session.hasFlash('blogger-notice') %}
+        <div class="blogger-notice">
+            {{ app.session.flash('blogger-notice') }}
+        </div>
+    {% endif %}
+
+    <p>del testo...</p>
+    
+    {% include 'BloggerBlogBundle:Comment:form.html.twig' with { 'form': form } %}
+    
+    
+{% endblock %}

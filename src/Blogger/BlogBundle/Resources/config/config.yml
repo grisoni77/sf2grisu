@@ -1,0 +1,4 @@
+parameters:
+  # Blogger email address
+  blogger_blog.emails.from_email:  cristiano.cucco@consulenti.csi.it
+  blogger_blog.emails.contact_email:  cristiano.cucco@gmail.com
